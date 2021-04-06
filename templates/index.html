@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.container {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10px 400px ;
+
+  grid-template-areas:
+        "head head2"
+        "map1 map2";
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <h1>Map</h1>
+    <div class="container">
+        <div></div>
+        <div style="padding:20px;">
+            {% include "map.html" %}
+            <p>Map Mumbai</p>
+        </div>
+        <div style="padding:20px;">
+            {% include "map2.html" %}
+            <p>Map Thane</p>
+        </div>
+    </div>
+</body>
+</html>
